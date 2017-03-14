@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../assets/materialize/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/prueba.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome/css/font-awesome.min.css">
+        <script type="text/javascript" src="../assets/jquery/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="../assets/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title></title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col l12 s12 header">
+                    <div class="col l3 s6"  style="height: 80px">
+                        <div class="return hide-on-small-only">
+                             <label>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>       REGRESAR AL EVENTO
+                            </label> 
+                        </div>
+                        <div class="return-resp show-on-small hide-on-med-and-up">
+                             <label>
+                                <i class="fa fa-angle-left" aria-hidden="true"></i> REGRESAR
+                            </label> 
+                        </div>                         
+                    </div>
+                    <div class="col l3 s6 offset-l6 hide-on-small-only loguito">
+                        <img id="logo" src="../assets/images/logo.png">
+                    </div> 
+
+                    <!-- Responsive Timer -->
+                    <div class="col l3 s6 offset-l6 show-on-small hide-on-med-and-up"  style="height: 80px">
+                        <div class="timer-resp">
+                            <label>14:58</label>
+                            <span class="time-min">min.</span>
+                            <span class="submessageresp">¡Tienes tiempo de sobra!</span>
+                        </div>
+                    </div>                 
+                     <!-- End Responsive Timer -->
+
+                </div> 
+                <div class="col l12 s12">
+                    <div class="col l8 s12" style="height: 530px;">
+                     <!--div class="col s6 show-on-medium-and-down hide-on-large-only"  style="background-color: blue; height: 50px">Imagen
+                     </div>
+                     <div class="col s6 show-on-medium-and-down hide-on-large-only"  style="background-color: brown; height: 50px">Otro texto
+                     </div-->
+                        <div class="col l4 s6" style="height: 100px">
+                            <div class="imagecontainer">
+                                <img src="../assets/images/party.png">
+                            </div>
+                                              
+                        </div>
+                        <div class="col l8 s6" style="height: 100px">
+                            <div class="title">
+                                Concierto en vivo del mejor grupo del momento
+                            </div>
+
+                            <div class="details">
+                                Miércoles 18 de noviembre a las 18:00
+                            </div>
+
+                            <div class="address">
+                                Calle Basadre 3456, San isidro.
+                            </div>
+                                              
+                        </div>
+
+                        <div class="col l12 s12">
+                            <div class="col l11 offset-l1 s12 payment-container">
+                                  <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                      <div class="collapsible-header payments"><i class="material-icons">verified_user</i>Elige tu método de pago</div>
+                                        <div class="collapsible-body" style="display: block;">
+                                            <div class="section">
+                                                <div class="row" style="height: 40px;">
+                                                    <div class="col l12">
+                                                        <div class="col l3 imgpayment">
+                                                            <img src="../assets/images/pc-tarjeta.jpg">
+                                                        </div>
+                                                        <div class="col l5 info">
+                                                            <h5 class="typepayment">Paga con tarjeta de crédito o debito</h5>
+                                                            <span>(El cobro se realizará en dólares)</span>
+                                                        </div>
+                                                        <div class="col l4">
+                                                            <div class="paybutton">
+                                                                <a class="waves-effect waves-light btn">Pagar con tarjeta</a> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                          <div class="divider"></div>
+
+                                          <div class="section">
+                                               <div class="row" style="height: 40px;">
+                                                    <div class="col l12">
+                                                        <div class="col l3 imgpayment">
+                                                            <img src="../assets/images/dollar.png" style="width: 90px; padding-left: 20px;">
+                                                        </div>
+                                                        <div class="col l5 info">
+                                                            <h5 class="typepayment">Depósito en efectivo</h5>
+                                                        </div>
+                                                        <div class="col l4">
+                                                            <div class="paybutton">
+                                                                <a class="waves-effect waves-light btn">Solicitar código de pago</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                          </div>
+
+                                          <div class="divider"></div>
+
+                                          <div class="section">
+                                               <div class="row" style="height: 40px;">
+                                                    <div class="col l12">
+                                                        <div class="col l3 imgpayment">
+                                                            <img src="../assets/images/tubanco.png">
+                                                        </div>
+                                                        <div class="col l5 info">
+                                                            <h5 class="typepayment">Paga en tu banca por internet</h5>
+                                                        </div>
+                                                        <div class="col l4">
+                                                            <div class="paybutton">
+                                                                <a class="waves-effect waves-light btn">Solicitar código de pago</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                        </div>
+                                    </li>
+                                  </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l4 s12" style="height: 530px;"> <!-- Detalle de pago contenedor grande -->
+
+                        <div class="col l12 hide-on-med-and-down" style="height: 100px">
+                            <div class="col l8 offset-l4">
+                                <div class="timer">
+                                     14:58
+                                     <span class="min">min.</span>
+                                </div>
+                                <div class="submessage">
+                                ¡ Tienes tiempo de sobra !
+                                </div>
+                            </div>
+                            <div class="col l12">
+                                <div class="detailpayment" style="">
+                                    <div class="col l12" id="titlepay">
+                                        Resumen de Compra
+                                    </div>
+
+                                    <div class="col l12 items">
+                                        <div class="qtyticket col l2">
+                                            2 X 
+                                        </div>
+                                        <div class="typeticket col l5">
+                                            Entrada General
+                                        </div>
+                                        <div class="amountticket col l5">
+                                            S/. 30.00
+                                        </div>                                        
+                                    </div>
+                                  
+                                  <div class="col l12 items">
+                                        <div class="qtyticket col l2">
+                                            1 X 
+                                        </div>
+                                        <div class="typeticket col l5">
+                                            Entrada General
+                                        </div>
+                                        <div class="amountticket col l5">
+                                            S/. 60.00
+                                        </div>                                        
+
+                                    </div>  
+                                  <div class="col l12">
+                                        <div class="col l9 offset-l3">
+                                            <div class="discount">
+                                                Dcto. S/. 0.00                                                
+                                            </div>
+                                        </div>                                        
+
+                                    </div>                                                                      
+                                </div>
+
+                            </div>
+
+                            
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <div class="progress loader">
+      <div class="determinate" style="width: 70%"></div>
+  </div>  	</body>
+  </html>
